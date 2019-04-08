@@ -1,28 +1,32 @@
 <template>
-  <div>
-    <nav class="nav">
-      <div class="nav-wrapper">
-        <img src="../assets/axelera_logo.svg" class="brand-logo logo">
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down nav-list">
-            <li><a class="color-text" href="sass.html">INICIO</a></li>
-            <li><a class="color-text" href="badges.html">PRODUCTOS</a></li>
-            <li><a class="color-text" href="collapsible.html">PREGUNTAS FRECUNTES</a></li>
-            <li><a class="color-text" href="mobile.html">CONTACTO</a></li>
-            <li><a class="color-text" href="mobile.html">INICIA SESIÓN</a></li>
-            <a class="waves-effect waves-light btn-small btn">SOLICITA TU CRÉDITO</a>
-          </ul>
-      </div>
-    </nav>
-        
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">INICIO</a></li>
-      <li><a href="badges.html">PRODUCTOS</a></li>
-      <li><a href="collapsible.html">PREGUNTAS FRECUENTES</a></li>
-      <li><a href="mobile.html">CONTACTO</a></li>
-      <li><a href="mobile.html">INICIA SESIÓN</a></li>
-    </ul>  
-  </div>           
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+    <img src="../assets/axelera_logo.svg" class="logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav nav-list">
+        <li class="nav-item">
+          <a class="nav-link color-text" href="#">INICIO</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-text" href="#">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-text" href="#">PREGUNTAS FRECUENTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-text" href="#">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-text" href="#">INICIA SESIÓN</a>
+        </li>
+        <li>
+          <button type="button" class="btn">SOLICITA TU CRÉDITO</button>
+        </li>
+      </ul>
+    </div>
+  </nav>          
 </template>
 
 <script>
@@ -34,8 +38,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .nav {
-    background-color: white !important;
     position: fixed;
+  }
+  .nav-item {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav-link {
+    padding: 0;
   }
   .nav-list{
     margin-right: 2%;
@@ -51,5 +61,6 @@ export default {
   }
   .btn {
     background-color: #32CD32;
+    color: white !important;
   }
 </style>

@@ -2,21 +2,24 @@
   <div>
     <Navbar/>
     <BackgroundCalculator/>
-    <comoFuncionamos/>
+    <ComoFuncionamos/>
+    <Requisitos/>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
 import BackgroundCalculator from './components/BackgroundCalculator.vue';
-import comoFuncionamos from './components/comoFuncionamos.vue';
+import ComoFuncionamos from './components/ComoFuncionamos.vue';
+import Requisitos from './components/Requisitos.vue';
 
 export default {
   name: 'app',
   components: {
     Navbar,
     BackgroundCalculator,
-    comoFuncionamos
+    ComoFuncionamos,
+    Requisitos
   }
 }
 </script>
