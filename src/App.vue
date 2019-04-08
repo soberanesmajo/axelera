@@ -4,6 +4,7 @@
     <BackgroundCalculator/>
     <ComoFuncionamos/>
     <Requisitos/>
+    <Nosotros/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Navbar from './components/Navbar.vue';
 import BackgroundCalculator from './components/BackgroundCalculator.vue';
 import ComoFuncionamos from './components/ComoFuncionamos.vue';
 import Requisitos from './components/Requisitos.vue';
+import Nosotros from './components/Nosotros.vue';
 
 export default {
   name: 'app',
@@ -19,11 +21,11 @@ export default {
     Navbar,
     BackgroundCalculator,
     ComoFuncionamos,
-    Requisitos
+    Requisitos,
+    Nosotros
   }
 }
 </script>
 
 <style>
-
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="section">
 		<header>
 			<h4 class="header">¿QUÉ NECESITO PARA SOLICITAD MI CRÉDITO?</h4>
 		</header>
@@ -44,7 +44,7 @@
 
 <script>
 export default {
-	name: "Requisitos"
+	name: 'Requisitos'
 }
 </script>
 
@@ -74,6 +74,9 @@ export default {
 	}
 	.row {
 		margin-top: 5%;
+	}
+	.section {
+		height: 85vh;
 	}
 </style>
 

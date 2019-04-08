@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "BackgroundCalculator"
+  name: 'BackgroundCalculator'
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="section">
 		<header>
 			<h4 class="header">¿CÓMO FUNCIONAMOS?</h4>
 		</header>
@@ -52,7 +52,7 @@
 
 <script>
 export default {
-	name: "ComoFuncionamos"
+	name: 'ComoFuncionamos'
 }
 </script>
 
@@ -61,6 +61,9 @@ export default {
 		text-align: center;
 		color: #745B6F;
 		margin-top: 5%;
+	}
+	.container {
+		height: 90%;
 	}
 	.card {
 		margin-left: auto;
@@ -83,6 +86,9 @@ export default {
 	}
 	.row {
 		margin-top: 5%;
+	}
+	.section{
+		height: 85vh;
 	}
 </style>
 
