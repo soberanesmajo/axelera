@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Nosotros'
+	name: 'Nosotros'
 }
 </script>
 
@@ -22,7 +22,7 @@ export default {
 		font-weight: bold;
 	}
 	.seccion {
-		height: 85vh;
+		height: 60vh;
 	}
 </style>
 

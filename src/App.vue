@@ -5,6 +5,7 @@
     <ComoFuncionamos/>
     <Requisitos/>
     <Nosotros/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import BackgroundCalculator from './components/BackgroundCalculator.vue';
 import ComoFuncionamos from './components/ComoFuncionamos.vue';
 import Requisitos from './components/Requisitos.vue';
 import Nosotros from './components/Nosotros.vue';
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
@@ -22,7 +24,8 @@ export default {
     BackgroundCalculator,
     ComoFuncionamos,
     Requisitos,
-    Nosotros
+    Nosotros,
+    Footer
   }
 }
 </script>
