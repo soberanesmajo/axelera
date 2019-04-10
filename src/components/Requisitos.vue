@@ -76,7 +76,7 @@ export default {
 		margin-top: 5%;
 	}
 	.section {
-		height: 85vh;
+		height: 75vh;
 	}
 </style>
 
