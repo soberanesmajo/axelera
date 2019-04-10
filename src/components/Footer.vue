@@ -22,7 +22,7 @@
             <p class="justify">Prolongación Paseo de la Reforma 1015, Piso 9, Edificio B, Punta Santa Fe, Col. Desarrollo Santa Fe, CP 01376 , México DF.</p>
             <p>Tel +52 (55) 4210-5300</p>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="col-md-4">
             <p class="right">Aviso de privacidad</p>
             <p class="right">Términos y condiciones</p>
           </div>
@@ -48,6 +48,9 @@ export default {
     /* height: auto; */
     background-color: #DDDDDD;
     position: relative;
+  }
+  .first {
+    margin-bottom: 2%;
   }
   .icons {
     width: 25px;

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav-fixed">
     <img src="../assets/axelera_logo.svg" class="logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,8 +37,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .nav {
-    position: fixed;
+  .nav-fixed {
+    width: 100%;
   }
   .nav-item {
     margin-top: auto;
