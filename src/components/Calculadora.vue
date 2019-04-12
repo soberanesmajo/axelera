@@ -10,7 +10,7 @@
           <div class="card monto-credit">
             <h5>Monto de tu crédito</h5>
             <p>3,000 - 150,000</p>
-            <input id="monto-range" type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000">
+            <input id="monto-range" type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000" v-model.number="montoRange">
             <div class="input-group mb-3">
               <input id="monto" class="form-control" type="number" min="3000" max="150000" step="1000" name="Monto del credito" placeholder="Monto del credito" value="3000">
             </div>
@@ -19,7 +19,7 @@
           <div class="card plazo-credit">
             <h5>Plazo de tu crédito</h5>
             <p>3 meses - 24 meses</p>
-            <input id="plazo-range" type="range" min="3" max="24" step="1" name="" value="3">
+            <input id="plazo-range" type="range" min="3" max="24" step="1" name="" value="3" v-model.number="plazoRange">
             <div class="input-group mb-3">
             <input class="form-control" id="plazo" type="number" min="3" max="24" name="Plazo del credito" placeholder="Plazo del credito" value="3">
             </div>
