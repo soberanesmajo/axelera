@@ -93,6 +93,12 @@ export default {
 	.section{
 		height: 85vh;
 	}
+	hr {
+		height: 1px;
+		color: #988095;
+		background-color: #988095;
+		border: none;
+	}
 </style>
 
 

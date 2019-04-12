@@ -1,11 +1,12 @@
 <template>
   <div>
     <Navbar/>
-    <BackgroundCalculator/>
-    <ComoFuncionamos/>
-    <Requisitos/>
-    <Nosotros/>
-    <Footer/>
+    <!-- <BackgroundCalculator/> -->
+    <!-- <ComoFuncionamos/> -->
+    <!-- <Requisitos/> -->
+    <!-- <Nosotros/> -->
+    <!-- <Footer/>  -->
+    <Personal/>
   </div>
 </template>
 
@@ -15,7 +16,8 @@ import BackgroundCalculator from './components/BackgroundCalculator.vue';
 import ComoFuncionamos from './components/ComoFuncionamos.vue';
 import Requisitos from './components/Requisitos.vue';
 import Nosotros from './components/Nosotros.vue';
-import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue';
+import Personal from './components/Personal.vue';
 
 export default {
   name: 'app',
@@ -25,7 +27,8 @@ export default {
     ComoFuncionamos,
     Requisitos,
     Nosotros,
-    Footer
+    Footer,
+    Personal
   }
 }
 </script>
