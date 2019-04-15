@@ -74,6 +74,9 @@ export default {
   .justify {
     text-align: justify;
   }
+  .row {
+    margin: 0;
+  }
   .social-icons {
     align-self: center;
     text-align: right;

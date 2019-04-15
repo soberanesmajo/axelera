@@ -4,14 +4,14 @@
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<div class="container">
 					<h3 class="h3">AXELERA</h3>
-					<h3>PERSONAL</h3>
+					<h3>ADELANTO</h3>
 					<hr>
-					<p>CRÉDITO PERSONALIZADO QUE PUEDES SOLICITAR EN LÍNEA DE MANERA ÁGIL, RÁPIDA Y SENCILLA. OFRECEMOS TASAS COMPETITIVAS, NO COBRAMOS COMISIONES NI SOLICITAMOS AVAL. LA TASA DE INTERÉS ES FIJA Y LOS PLAZOS SON FLEXIBLES. NUESTROS CRÉDITOS ESTÁN ASEGURADOS EN CASO DE FALLECIMIENTO, INVALIDEZ TOTAL O PERMANENTE.</p>
+					<p>ES UNA EXCELENTE SOLUCIÓN PARA CONSEGUIR LIQUIDEZ INMEDIATA SIN ENDEUDARSE Y PODRÁS SOLICITAR HASTA 1 MES DE TU SUELDO POR ADELANTADO. SIN TRÁMITES COMPLICADOS NI COMISIONES. PUEDES SOLICITAR UN ANTICIPO CUANTAS VECES LO NECESITES SIEMPRE Y CUANDO HAYAS CUBIERTO TU SALDO ANTERIOR.</p>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 image no-padding">
 				<div class="image">
-					<img src="../assets/personal3.jpg">
+					<img src="../assets/adelanto7.jpg">
 				</div>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-	name: 'PersonalImagen'
+  name: 'AdelantoImagen'
 }
 </script>
 
@@ -37,8 +37,9 @@ export default {
 		/* width: 840px;
 		height: 720px; */
 		max-width: 100%;
-		max-height: 100vh;
+    max-height: 100vh;
 		margin: auto;
+		margin-bottom: 0;
 	}
 	.no-padding {
 		padding: 0;
@@ -63,3 +64,5 @@ export default {
 		font-size: 14px;
 	}
 </style>
+
+

@@ -6,7 +6,8 @@
     <!-- <Requisitos/> -->
     <!-- <Nosotros/> -->
     <!-- <Footer/>  -->
-    <Personal/>
+    <!-- <Personal/> -->
+    <Adelanto/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Requisitos from './components/Requisitos.vue';
 import Nosotros from './components/Nosotros.vue';
 import Footer from './components/Footer.vue';
 import Personal from './components/Personal.vue';
+import Adelanto from './components/Adelanto.vue'
 
 export default {
   name: 'app',
@@ -28,7 +30,8 @@ export default {
     Requisitos,
     Nosotros,
     Footer,
-    Personal
+    Personal,
+    Adelanto
   }
 }
 </script>
