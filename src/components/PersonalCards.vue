@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+	<section class="section">
 		<div class="container">
 			<div class="row">
 				<div class="border card">
@@ -54,6 +54,7 @@ export default {
 		width: 18rem;
 		height: 33rem;
 		margin: auto;
+		margin-top: 15px;
 	}
 	h5 {
 		text-align: center;
@@ -61,7 +62,9 @@ export default {
 		margin-bottom: 10%;
 	}
 	.section {
-		height: 85vh;
+		/* height: 85vh; */
+		margin-top: 10%;
+		margin-bottom: 15%;
 	}
 </style>
 
