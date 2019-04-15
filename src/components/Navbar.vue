@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top nav-fixed">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" v-bind:class="{ 'navbarOpen': show }">
     <img src="../assets/axelera_logo.svg" class="logo">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" v-on:click="toggleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"  v-bind:class="{ 'show': show }">
       <ul class="navbar-nav nav-list">
         <li class="nav-item">
           <a class="nav-link color-text" href="#">INICIO</a> 
@@ -31,14 +31,24 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  data() {
+    return {
+      show: true
+    }
+  },
+  methods: {
+    toggleNavbar() {
+      this.show = !this.show;
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .nav-fixed {
-    width: 100%;
+  .navbar {
+    width: 100% !important;
   }
   .nav-item {
     margin-top: auto;

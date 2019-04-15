@@ -1,16 +1,13 @@
 <template>
-	<section class="section">
+  <section class="section">
 		<div class="container">
 			<div class="row">
 				<div class="border card">
 					<div class="container">
 						<h5>CARACTERÍSTICAS</h5>
-						<p>Plazo: De 12 a 48 quincenas.</p>
-						<p>Formas de pago: Descuento vía nómina.</p>
-						<p>Periodicidad de pago: Quincenal, catorcenal, mensual o semanal.</p>
-						<p>Monto del crédito: Desde $3,000.00 hasta $150,000.00 pesos (moneda nacional).</p>
-						<p>Pagos fijos con amortizaciones a capital e intereses.</p>
-						<p>Pagos anticipados sin penalización.</p>
+						<p>Hasta un mes de sueldo por adelantado.</p>
+						<p>FPagos anticipados sin penalización.</p>
+						<p>Puede renovarse automáticamente si asi lo solicitas.</p>
 					</div>
 				</div>
 				<div class="border card">
@@ -19,19 +16,19 @@
 						<p>Identificación Oficial.</p>
 						<p>Comprobante de domicilio vigente (no mayor a 2 meses de su emisión).</p>
 						<p>Tener entre 18 y 60 años.</p>
-						<p>Antigüedad laboral mínima de 6 meses.</p>
+						<p>Antigüedad laboral mínima de 3 meses.</p>
 						<p>Trabajar en una empresa con la que tengamos convenio.</p>
 					</div>
 				</div>
 				<div class="border card">
 					<div class="container">
 						<h5>BENEFICIOS PARA EL TRABAJADOR</h5>
-						<p>Sin aval.</p>
-						<p>Sin garantía.</p>
+						<p>Liquidez inmediata.</p>
 						<p>Sin comisión de apertura.</p>
 						<p>Proceso de contratación ágil.</p>
 						<p>Atención personalizada.</p>
 						<p>Respuesta en menos de 24 horas.</p>
+						<p>Al ser un adelanto de nómina no genera endeudamiento.</p>
 					</div>
 				</div>
 			</div>
@@ -41,7 +38,7 @@
 
 <script>
 export default {
-  name: 'PersonalCards'
+  
 }
 </script>
 
