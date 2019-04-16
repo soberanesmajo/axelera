@@ -6,7 +6,7 @@
 					<div class="container">
 						<h5>CARACTERÍSTICAS</h5>
 						<p>Hasta un mes de sueldo por adelantado.</p>
-						<p>FPagos anticipados sin penalización.</p>
+						<p>Pagos anticipados sin penalización.</p>
 						<p>Puede renovarse automáticamente si asi lo solicitas.</p>
 					</div>
 				</div>
