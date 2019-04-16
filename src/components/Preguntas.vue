@@ -23,7 +23,7 @@
 			<div>
 				<b-link v-b-toggle.collapse-3 class="m-1"><p>+ ¿CONSULTAN BURÓ DE CRÉDITO?</p></b-link>
 				<b-collapse id="collapse-3">
-					<b-p>Sí lo consultamos , aunque tomamos en cuenta otros factores que no se limitan únicamente al estudio de Buró de Crédito.</b-p>
+					<b-p>Sí lo consultamos, aunque tomamos en cuenta otros factores que no se limitan únicamente al estudio de Buró de Crédito.</b-p>
 				</b-collapse>
 			</div>
 			<div>
