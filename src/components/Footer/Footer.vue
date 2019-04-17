@@ -4,12 +4,12 @@
       <div class="container general">
         <div class="row first">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <img src="../assets/axelera_blanco_2.png">
+            <img src="../../assets/axelera_blanco_2.png">
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 social-icons">
-            <img class="icons" src="../assets/001-facebook.png">
-            <img class="icons" src="../assets/002-twitter.png">
-            <img class="icons" src="../assets/003-google-plus.png">
+            <img class="icons" src="../../assets/001-facebook.png">
+            <img class="icons" src="../../assets/002-twitter.png">
+            <img class="icons" src="../../assets/003-google-plus.png">
           </div>
         </div>
         <div class="row">
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
           <div class="tres" >
-            <img class="tres-icons" src="../assets/axelera-3.png">
+            <img class="tres-icons" src="../../assets/axelera-3.png">
           </div>
         </div>
       </div>

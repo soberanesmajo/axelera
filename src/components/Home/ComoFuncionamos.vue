@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="card" style="max-width: 15rem;">
 					<div class="image-center">
-						<img src="../assets/solicita_tu_credito.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
+						<img src="../../assets/solicita_tu_credito.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
 					</div>
 					<div class="card-body">
 						<h5 class="card-title">SOLICITA TU CRÉDITO EN LÍNEA</h5>
@@ -17,7 +17,7 @@
 				</div>
 				<div class="card" style="max-width: 15rem;">
 					<div class="image-center">
-						<img src="../assets/analizamos_tu_informacion.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
+						<img src="../../assets/analizamos_tu_informacion.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
 					</div>
 					<div class="card-body">
 						<h5 class="card-title">ANALIZAMOS TU INFORMACIÓN</h5>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="card" style="max-width: 15rem;">
 					<div class="image-center">
-						<img src="../assets/Firma_tu_contrato.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
+						<img src="../../assets/Firma_tu_contrato.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
 					</div>
 					<div class="card-body">
 						<h5 class="card-title">FIRMA TU CONTRATO</h5>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="card" style="max-width: 15rem;">
 					<div class="image-center">
-						<img src="../assets/recibe_el_dinero.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
+						<img src="../../assets/recibe_el_dinero.png" class="card-img-top img" alt="Logotipo que hace referencia a la sección de solicita tu crédito">
 					</div>
 					<div class="card-body">
 						<h5 class="card-title horas">RECIBE EL DINERO EN MENOS DE 24 HORAS</h5>

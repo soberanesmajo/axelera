@@ -10,8 +10,8 @@
 <script>
 import AdelantoImagen from './AdelantoImagen.vue';
 import AdelantoCards from './AdelantoCards.vue';
-import Banner from './Banner.vue';
-import Footer from './Footer.vue';
+import Banner from '../Banner/Banner.vue';
+import Footer from '../Footer/Footer.vue';
 export default {
   name: 'Adelanto',
 	components: {
