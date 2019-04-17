@@ -16,17 +16,17 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import BackgroundCalculator from './components/BackgroundCalculator.vue';
-import ComoFuncionamos from './components/ComoFuncionamos.vue';
-import Requisitos from './components/Requisitos.vue';
-import Nosotros from './components/Nosotros.vue';
-import Footer from './components/Footer.vue';
-import Personal from './components/Personal.vue';
-import Adelanto from './components/Adelanto.vue';
-import Preguntas from './components/Preguntas.vue';
-import Contacto from './components/Contacto.vue';
-import IniciarSesion from './components/IniciarSesion.vue';
+import Navbar from './components/Navbar/Navbar.vue';
+import BackgroundCalculator from './components/Home/BackgroundCalculator.vue';
+import ComoFuncionamos from './components/Home/ComoFuncionamos.vue';
+import Requisitos from './components/Home/Requisitos.vue';
+import Nosotros from './components/Home/Nosotros.vue';
+import Footer from './components/Footer/Footer.vue';
+import Personal from './components/Personal/Personal.vue';
+import Adelanto from './components/Adelanto/Adelanto.vue';
+import Preguntas from './components/Preguntas/Preguntas.vue';
+import Contacto from './components/Contacto/Contacto.vue';
+import IniciarSesion from './components/Iniciar_Sesion/IniciarSesion.vue';
 import Registro from './components/Registro/Registro.vue';
 
 export default {

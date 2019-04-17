@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 	.background-image {
-		background-image: url("../assets/background-calculator.jpg");
+		background-image: url("../../assets/background-calculator.jpg");
 		width: 100vw;
 		height: 100vh;
 		background-size: cover;

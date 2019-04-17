@@ -10,8 +10,8 @@
 <script>
 import PersonalImagen from './PersonalImagen.vue';
 import PersonalCards from './PersonalCards.vue';
-import Banner from './Banner.vue';
-import Footer from './Footer.vue';
+import Banner from '../Banner/Banner.vue';
+import Footer from '../Footer/Footer.vue';
 
 export default {
   name: 'Personal',
