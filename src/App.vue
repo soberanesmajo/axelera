@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar/>
+    <!-- <Navbar/> -->
     <!-- <BackgroundCalculator/> -->
     <!-- <ComoFuncionamos/> -->
     <!-- <Requisitos/> -->
@@ -9,7 +9,8 @@
     <!-- <Personal/> -->
     <!-- <Adelanto/> -->
     <!-- <Preguntas/> -->
-    <Contacto/>
+    <!-- <Contacto/> -->
+    <IniciarSesion/>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import Personal from './components/Personal.vue';
 import Adelanto from './components/Adelanto.vue';
 import Preguntas from './components/Preguntas.vue';
 import Contacto from './components/Contacto.vue';
+import IniciarSesion from './components/IniciarSesion.vue';
 
 export default {
   name: 'app',
@@ -37,7 +39,8 @@ export default {
     Personal,
     Adelanto,
     Preguntas,
-    Contacto
+    Contacto,
+    IniciarSesion
   }
 }
 </script>
