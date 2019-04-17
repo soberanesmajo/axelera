@@ -2,28 +2,31 @@
 	<form>
 		<div class="form">
 			<div class="container cont">
-				<h5 class="header">INICIAR SESIÓN</h5>
-				<p>Correo<span>*</span></p>
+				<h5 class="header">¡ Regístrate !</h5>
+				<p>Nombre de usuario<span>*</span></p>
+					<div class="row">
+						<input class="input" type="text" placeholder="">
+					</div>
+					<br>
+					<p>Correo<span>*</span></p>
 					<div class="row">
 						<input class="input" type="text" placeholder="">
 					</div>
 					<br>
 					<p>Contraseña<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
+						<div class="row">
+							<input class="input" type="text" placeholder="">
+						</div>
 					<br>
+					<p>Confirmar contraseña<span>*</span></p>
+						<div class="row">
+							<input class="input" type="text" placeholder="">
+						</div>
 					<div class="row button">
-						<button>INICIAR SESIÓN</button>
-					</div>
-					<div class="a">
-						<a href="#">¿Olvidaste tu contraseña?</a>
+						<button>Registrarse</button>
 					</div>
 					<hr>
-					<p class="center">¿Aún no estás registrado?</p>
-					<div class="row button">
-						<button>¡Regístrate Aquí!</button>
-					</div>
+					<p class="center">¿Ya tienes cuenta? <span><a href="#">Inicia sesión</a></span></p>
 			</div>
 		</div>
 	</form>
@@ -31,7 +34,7 @@
 
 <script>
 export default {
-  name: 'FormLogin'
+  name: 'FormRegistro'
 }
 </script>
 
@@ -71,7 +74,8 @@ export default {
 	}
 	button {
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		padding: 4px 25px;
 		border: 0;
 		border-radius: 5px;
@@ -79,10 +83,6 @@ export default {
 	}
 	.button {
 		justify-content: center;
-	}
-	.a {
-		margin-top: 15%;
-		margin-bottom: 20%;
 	}
 	hr {
 		height: 1px;
