@@ -11,7 +11,9 @@
     <!-- <Preguntas/> -->
     <!-- <Contacto/> -->
     <!-- <IniciarSesion/> -->
-    <Registro/>
+    <!-- <Registro/> -->
+    <!-- <Mail/> -->
+    <Restablecer/>
   </div>
 </template>
 
@@ -28,6 +30,8 @@ import Preguntas from './components/Preguntas/Preguntas.vue';
 import Contacto from './components/Contacto/Contacto.vue';
 import IniciarSesion from './components/Iniciar_Sesion/IniciarSesion.vue';
 import Registro from './components/Registro/Registro.vue';
+import Mail from './components/Contrasena/Mail.vue';
+import Restablecer from './components/Contrasena/Restablecer.vue';
 
 export default {
   name: 'app',
@@ -43,7 +47,9 @@ export default {
     Preguntas,
     Contacto,
     IniciarSesion,
-    Registro
+    Registro,
+    Mail,
+    Restablecer
   }
 }
 </script>
