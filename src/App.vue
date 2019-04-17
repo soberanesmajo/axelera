@@ -10,7 +10,8 @@
     <!-- <Adelanto/> -->
     <!-- <Preguntas/> -->
     <!-- <Contacto/> -->
-    <IniciarSesion/>
+    <!-- <IniciarSesion/> -->
+    <Registro/>
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import Adelanto from './components/Adelanto.vue';
 import Preguntas from './components/Preguntas.vue';
 import Contacto from './components/Contacto.vue';
 import IniciarSesion from './components/IniciarSesion.vue';
+import Registro from './components/Registro/Registro.vue';
 
 export default {
   name: 'app',
@@ -40,7 +42,8 @@ export default {
     Adelanto,
     Preguntas,
     Contacto,
-    IniciarSesion
+    IniciarSesion,
+    Registro
   }
 }
 </script>
