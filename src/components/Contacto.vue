@@ -23,7 +23,7 @@
 							<br>
 							<p>MENSAJE<span>*</span></p>
 							<div class="row">
-								<textarea name="" id="" cols="30" rows="10"></textarea>
+								<textarea name="" id="" cols="40" rows="5"></textarea>
 							</div>
 							<div class="row">
 								<button>Enviar</button>
