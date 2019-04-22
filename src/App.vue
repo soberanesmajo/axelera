@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <Navbar/> -->
+    <Navbar/>
     <!-- <BackgroundCalculator/> -->
     <!-- <ComoFuncionamos/> -->
     <!-- <Requisitos/> -->
@@ -13,7 +13,13 @@
     <!-- <IniciarSesion/> -->
     <!-- <Registro/> -->
     <!-- <Mail/> -->
-    <Restablecer/>
+    <!-- <Restablecer/> -->
+    <!-- <SolicitudImagen/> -->
+    <!-- <Formulario1/> -->
+    <!-- <Formulario2/> -->
+    <!-- <Formulario3/> -->
+    <!-- <Formulario4/> -->
+    <Formulario5/>
   </div>
 </template>
 
@@ -32,6 +38,13 @@ import IniciarSesion from './components/Iniciar_Sesion/IniciarSesion.vue';
 import Registro from './components/Registro/Registro.vue';
 import Mail from './components/Contrasena/Mail.vue';
 import Restablecer from './components/Contrasena/Restablecer.vue';
+import SolicitudImagen from './components/Solicitud/SolicitudImagen.vue';
+import Formulario1 from './components/Solicitud/Formulario1.vue';
+import Formulario2 from './components/Solicitud/Formulario2.vue';
+import Formulario3 from './components/Solicitud/Formulario3.vue';
+import Formulario4 from './components/Solicitud/Formulario4.vue';
+import Formulario5 from './components/Solicitud/Formulario5.vue';
+
 
 export default {
   name: 'app',
@@ -49,7 +62,13 @@ export default {
     IniciarSesion,
     Registro,
     Mail,
-    Restablecer
+    Restablecer,
+    SolicitudImagen,
+    Formulario1,
+    Formulario2,
+    Formulario3,
+    Formulario4,
+    Formulario5
   }
 }
 </script>
