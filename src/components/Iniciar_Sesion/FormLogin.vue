@@ -4,26 +4,26 @@
 			<div class="container cont">
 				<h5 class="header">INICIAR SESIÓN</h5>
 				<p>Correo<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<p>Contraseña<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" placeholder="">
-					</div>
-					<br>
-					<div class="row button">
-						<button>INICIAR SESIÓN</button>
-					</div>
-					<div class="a">
-						<a href="#">¿Olvidaste tu contraseña?</a>
-					</div>
-					<hr>
-					<p class="center">¿Aún no estás registrado?</p>
-					<div class="row button">
-						<button>¡Regístrate Aquí!</button>
-					</div>
+				<div class="row">
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<p>Contraseña<span>*</span></p>
+				<div class="row">
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<div class="row button">
+					<button>INICIAR SESIÓN</button>
+				</div>
+				<div class="a">
+					<a href="#">¿Olvidaste tu contraseña?</a>
+				</div>
+				<hr>
+				<p class="center">¿Aún no estás registrado?</p>
+				<div class="row button">
+					<button>¡Regístrate Aquí!</button>
+				</div>
 			</div>
 		</div>
 	</form>
