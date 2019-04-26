@@ -17,12 +17,12 @@
 					<button>INICIAR SESIÓN</button>
 				</div>
 				<div class="a">
-					<a href="#">¿Olvidaste tu contraseña?</a>
+					<router-link to="/mail">¿Olvidaste tu contraseña?</router-link>
 				</div>
 				<hr>
 				<p class="center">¿Aún no estás registrado?</p>
 				<div class="row button">
-					<button>¡Regístrate Aquí!</button>
+					<button><router-link to="/registro">¡Regístrate Aquí!</router-link></button>
 				</div>
 			</div>
 		</div>
@@ -83,6 +83,11 @@ export default {
 	.a {
 		margin-top: 15%;
 		margin-bottom: 20%;
+	}
+	button a {
+		color: black !important;
+		text-decoration: none;
+		background-color: transparent !important;
 	}
 	hr {
 		height: 1px;

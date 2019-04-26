@@ -25,9 +25,6 @@ export default {
 </script>
 
 <style scoped>
-	.container-fluid {
-		height: 100vh !important;
-	}
 	.container {
 		padding-left: 8%;
 		padding-right: 8%;
@@ -37,10 +34,7 @@ export default {
 		height: 100%;
 	}
 	img {
-		/* width: 840px;
-		height: 720px; */
 		max-width: 100%;
-		max-height: 100vh;
 		margin: auto;
 	}
 	.no-padding {

@@ -87,6 +87,9 @@ export default {
 		margin-top: 1rem;
 		margin-bottom: 1.5rem;
 	}
+	.card-text {
+		text-align: justify;
+	}
 	.row {
 		margin-top: 5%;
 	}

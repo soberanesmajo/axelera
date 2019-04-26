@@ -1,10 +1,12 @@
 <template>
 	<div class="form" :style="myStyle">
+		<Navbar/>
 		<FormLogin/>
 	</div>
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 import FormLogin from './FormLogin.vue'
 
 export default {
@@ -17,6 +19,7 @@ export default {
     }
   },
 	components: {
+		Navbar,
 		FormLogin
 	}
 }
@@ -28,6 +31,7 @@ export default {
 		justify-content: center;
 		padding-top: 2%;
 		height: auto;
+		margin-top: 5%;
 	}
 </style>
 

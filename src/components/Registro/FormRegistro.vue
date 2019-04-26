@@ -23,10 +23,10 @@
 							<input class="input" type="text" placeholder="">
 						</div>
 					<div class="row button">
-						<button>Registrarse</button>
+						<button><router-link to="/iniciar-sesion">Registrarse</router-link></button>
 					</div>
 					<hr>
-					<p class="center">¿Ya tienes cuenta? <span><a href="#">Inicia sesión</a></span></p>
+					<p class="center">¿Ya tienes cuenta? <span><router-link to="/iniciar-sesion">Inicia Sesión</router-link></span></p>
 			</div>
 		</div>
 	</form>
@@ -83,6 +83,11 @@ export default {
 	}
 	.button {
 		justify-content: center;
+	}
+	button a {
+		color: black !important;
+		text-decoration: none;
+		background-color: transparent !important;
 	}
 	hr {
 		height: 1px;

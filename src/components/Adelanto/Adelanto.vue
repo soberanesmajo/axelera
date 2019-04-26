@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<Navbar/>
 		<AdelantoImagen/>
 		<AdelantoCards/>
 		<Banner/>
@@ -8,13 +9,15 @@
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 import AdelantoImagen from './AdelantoImagen.vue';
 import AdelantoCards from './AdelantoCards.vue';
 import Banner from '../Banner/Banner.vue';
 import Footer from '../Footer/Footer.vue';
 export default {
-  name: 'Adelanto',
+	name: 'Adelanto',
 	components: {
+		Navbar,
 		AdelantoImagen,
 		AdelantoCards,
 		Banner,
