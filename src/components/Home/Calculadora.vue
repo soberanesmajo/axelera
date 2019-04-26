@@ -113,19 +113,6 @@ export default {
     border-width: medium;
     padding: 2%;
   }
-  @media only screen and (max-device-width:1024px) {
-    /* .background {
-      background-color: rgb(156, 133, 150, .72);	
-      height: 55rem;
-      width: 48rem;
-      margin-top: 20%;
-      border-radius: 5px;
-    }
-    .background-white {
-      background-color: white;
-      height: 40rem;
-    } */
-  }
 </style>
 
 
