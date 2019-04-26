@@ -102,6 +102,16 @@ export default {
 		background-color: #988095;
 		border: none;
 	}
+	@media only screen and (device-width:768px) {
+		.section {
+			margin-bottom: 15%;
+		}
+		.card {
+			margin-left: 3.7rem;
+			margin-right: 3.7rem;
+			border: 0;
+		}
+	}
 </style>
 
 

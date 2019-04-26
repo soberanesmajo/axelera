@@ -78,6 +78,16 @@ export default {
 	.section {
 		height: 75vh;
 	}
+	@media only screen and (device-width:768px) {
+		.section {
+			height: 60vh;
+		}
+		.card {
+			margin-left: 3.7rem;
+			margin-right: 3.7rem;
+			border: 0;
+		}
+	}
 </style>
 
 
