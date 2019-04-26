@@ -20,10 +20,15 @@ export default {
     margin-top: 1rem;
     font-size: larger;
     font-weight: bold;
-    }
+  }
   .seccion {
 		height: 60vh;
+  }
+  @media only screen and (device-width:768px) {
+    .seccion {
+      height: 35vh;
     }
+  }
 </style>
 
 
