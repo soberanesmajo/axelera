@@ -37,7 +37,7 @@ export default {
 		/* width: 840px;
 		height: 720px; */
 		max-width: 100%;
-		max-height: 100vh;
+		/* max-height: 100vh; */
 		margin: auto;
 	}
 	.no-padding {

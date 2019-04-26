@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<Navbar/>
 		<section class="container">
 			<h4 class="header">CONTACTO</h4>
 			<hr>
@@ -7,21 +8,29 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<div class="container">
-							<p>Prolongación Paseo de la Reforma 1015, Piso 9, Edificio B, Punta Santa Fe, Col. Desarrollo Santa Fe, CP 01376, Mexico DF.</p>
-							<p>Tel +52 (55) 4210-5300</p>
+							<div class="row">
+								<p>Prolongación Paseo de la Reforma 1015, Piso 9, Edificio B, Punta Santa Fe, Col. Desarrollo Santa Fe, CP 01376, Mexico DF.</p>
+								<p>Tel +52 (55) 4210-5300</p>
+							</div>
 							<br>
-							<p>NOMBRE<span>*</span></p>
+							<div class="row">
+								<p>NOMBRE<span>*</span></p>
+							</div>
 							<div class="row">
 								<input class="col-4 space" type="text" placeholder="First">
 								<input class="col-4 space" type="text" placeholder="Last">
 							</div>
 							<br>
-							<p>EMAIL<span>*</span></p>
+							<div class="row">
+								<p>EMAIL<span>*</span></p>
+							</div>
 							<div class="row">
 								<input type="text">
 							</div>
 							<br>
-							<p>MENSAJE<span>*</span></p>
+							<div class="row">
+								<p>MENSAJE<span>*</span></p>
+							</div>
 							<div class="row">
 								<textarea name="" id="" cols="40" rows="5"></textarea>
 							</div>
@@ -31,7 +40,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-						Aqui va el mapa
+						<img src="../../assets/mapa.png" alt="mapa">
 					</div>
 				</div>
 			</div>
@@ -41,10 +50,13 @@
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 import Footer from '../Footer/Footer.vue';
+
 export default {
 	name: 'contacto',
 	components: {
+		Navbar,
 		Footer
 	}
 }
@@ -64,13 +76,17 @@ export default {
 		margin-top: 15%;
 	}
 	.space {
-		margin: 5px;
+		margin-right: 5px;
 	}
 	section {
 		margin-bottom: 10%;
 	}
 	span {
 		color: red;
+	}
+	img {
+		width: 33rem;
+		height: 30rem;
 	}
 </style>
 

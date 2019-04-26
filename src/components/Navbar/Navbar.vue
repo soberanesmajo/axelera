@@ -7,22 +7,26 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav"  v-bind:class="{ 'show': show }">
       <ul class="navbar-nav nav-list">
         <li class="nav-item">
-          <a class="nav-link color-text" href="#">INICIO</a> 
+          <router-link class="dropdown-item color-text" to="/">INICIO</router-link>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-on:click="toggleNavbar">PRODUCTOS</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" v-bind:class="{ 'show': show }">
+            <router-link class="dropdown-item color-text" to="/axelera-personal">AXELERA PERSONAL</router-link>
+            <router-link class="dropdown-item color-text" to="/axelera-adelanto">AXELERA ADELANTO</router-link>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-text" href="#">PRODUCTOS</a>
+          <router-link class="dropdown-item color-text" to="/preguntas-frecuentes">PREGUNTAS FRECUENTES</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-text" href="#">PREGUNTAS FRECUENTES</a>
+          <router-link class="dropdown-item color-text" to="/contacto">CONTACTO</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link color-text" href="#">CONTACTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link color-text" href="#">INICIA SESIÓN</a>
+          <router-link class="dropdown-item color-text" to="/iniciar-sesion">INICIA SESIÓN</router-link>
         </li>
         <li>
-          <button type="button" class="btn">SOLICITA TU CRÉDITO</button>
+          <button type="button" class="btn"><router-link class="dropdown-item btn" to="/solicita-tu-credito">SOLICITA TU CRÉDITO</router-link></button>
         </li>
       </ul>
     </div>
@@ -70,7 +74,12 @@ export default {
     font-size: 15px;
   }
   .btn {
-    background-color: #32CD32;
+    background-color: #32CD32 !important;
     color: white !important;
+  }
+  a {
+    color: transparent;
+    text-decoration: none;
+    background-color: transparent !important;
   }
 </style>

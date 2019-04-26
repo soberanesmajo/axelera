@@ -1,5 +1,6 @@
 <template>
 	<div>		
+		<Navbar/>
 		<section class="container form4">
 			<div class="container cont-color" :style="myStyle">
 				<form class="form">
@@ -11,12 +12,12 @@
 					<h4>Datos Laborales</h4>
 					<p>Nombre de la empresa donde trabaja<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Antigüedad laboral<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Frecuencia de pago<span>*</span></p>
@@ -28,27 +29,27 @@
 					<br>
 					<p>Puesto<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Correo electrónico del trabajo<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Jefe Inmediato<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Saldo Mensual<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Monto solicitado<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Plazo requerido<span>*</span></p>
@@ -67,23 +68,23 @@
 					<br>
 					<p>Cuenta bancaria<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 						<label>(Cuenta donde recibes tu nómina)</label>
 					</div>
 					<br>
 					<p>Banco<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 					</div>
 					<br>
 					<p>Clabe<span>*</span></p>
 					<div class="row">
-						<input class="input" type="text">
+						<input class="input" type="text" required>
 						<label>(18 dígitos)</label>
 					</div>
 					<div class="row button">
-						<button>Regresar</button>
-						<button>Avanzar</button>
+						<button><router-link class="dropdown-item" to="/solicita-tu-credito-3">Regresar</router-link></button>
+						<button><router-link class="dropdown-item" to="/solicita-tu-credito-5">Avanzar</router-link></button>
 					</div>
 					<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
 				</form>
@@ -94,6 +95,7 @@
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 import Footer from '../Footer/Footer.vue';
 export default {
 	name: 'Formulario4',
@@ -106,6 +108,7 @@ export default {
     }
   },
   components: {
+		Navbar,
 		Footer
   }
 }
@@ -158,16 +161,21 @@ export default {
 		font-size: 11px;
 	}
 	.input[type=range]{
-  height: 8px;
-  margin-bottom: 2%;
-  border-radius: 15px;
+		height: 8px;
+		margin-bottom: 2%;
+		border-radius: 15px;
   }
   .input[type=range]::-webkit-slider-thumb{
-  width: 15px;
-  height: 15px;
-  background: #988095;
-  cursor: pointer;
-  border-radius: 15px;
+		width: 15px;
+		height: 15px;
+		background: #988095;
+		cursor: pointer;
+		border-radius: 15px;
+  }
+	a {
+		color: black !important;
+    text-decoration: none;
+    background-color: transparent !important;
   }
 </style>
 

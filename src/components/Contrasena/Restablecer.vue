@@ -1,11 +1,13 @@
 <template>
 	<div class="form" :style="myStyle">
+		<Navbar/>
 		<FormContrasena/>
 	</div>
 </template>
 
 <script>
-import FormContrasena from './FormContrasena.vue'
+import Navbar from '../Navbar/Navbar.vue';
+import FormContrasena from './FormContrasena.vue';
 
 export default {
 	name: 'Restablecer',
@@ -17,6 +19,7 @@ export default {
     }
 	},
 	components: {
+		Navbar,
 		FormContrasena
 	}
 }

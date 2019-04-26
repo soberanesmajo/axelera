@@ -13,7 +13,7 @@
 						<input class="input" type="text">
 					</div>
 					<div class="row button">
-						<button>Enviar</button>
+						<button><router-link to="/iniciar-sesion">Enviar</router-link></button>
 					</div>					
 			</div>
 		</div>
@@ -68,6 +68,11 @@ export default {
 	.button {
 		justify-content: center;
 	}
+	div a {
+		color: black !important;
+		text-decoration: none;
+		background-color: transparent !important;
+	}	
 </style>
 
 

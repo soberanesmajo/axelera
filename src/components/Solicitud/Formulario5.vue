@@ -1,5 +1,6 @@
 <template>
 	<div>		
+		<Navbar/>
 		<section class="container form5">
 			<div class="container cont-color" :style="myStyle">
 				<form class="form">
@@ -11,7 +12,7 @@
 					<h4>Documentos</h4>
 					<p>Identificación Oficial<span class="span">*</span></p>
 					<div class="row">
-						<input type="file">
+						<input type="file" required>
 					</div>
 					<div class="row">
 						<span>(IFE, INE, Pasaporte)</span>
@@ -19,10 +20,11 @@
 					<br>
 					<p>Comprobante de domicilio<span class="span">*</span></p>
 					<div class="row">
-						<input type="file">
+						<input type="file" required>
 					</div>
 					<div class="row button">
-						<button>Enviar</button>
+						<button><router-link class="dropdown-item" to="/solicita-tu-credito-4">Regresar</router-link></button>
+						<button><router-link class="dropdown-item" to="/">Enviar</router-link></button>
 					</div>
 					<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
 				</form>
@@ -33,6 +35,7 @@
 </template>
 
 <script>
+import Navbar from '../Navbar/Navbar.vue';
 import Footer from '../Footer/Footer.vue';
 export default {
 	name: 'Formulario5',
@@ -45,6 +48,7 @@ export default {
     }
   },
   components: {
+		Navbar,
 		Footer
   }
 }
@@ -97,16 +101,21 @@ export default {
 		font-size: 11px;
 	}
 	.input[type=range]{
-  height: 8px;
-  margin-bottom: 2%;
-  border-radius: 15px;
+		height: 8px;
+		margin-bottom: 2%;
+		border-radius: 15px;
   }
   .input[type=range]::-webkit-slider-thumb{
-  width: 15px;
-  height: 15px;
-  background: #988095;
-  cursor: pointer;
-  border-radius: 15px;
+		width: 15px;
+		height: 15px;
+		background: #988095;
+		cursor: pointer;
+		border-radius: 15px;
+  }
+	a {
+		color: black !important;
+    text-decoration: none;
+    background-color: transparent !important;
   }
 </style>
 

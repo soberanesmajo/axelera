@@ -1,11 +1,13 @@
 <template>
 	<div class="form" :style="myStyle">
+		<Navbar/>
 		<FormMail/>
 	</div>
 </template>
 
 <script>
-import FormMail from './FormMail.vue'
+import Navbar from '../Navbar/Navbar.vue';
+import FormMail from './FormMail.vue';
 
 export default {
 	name: 'Mail',
@@ -17,6 +19,7 @@ export default {
     }
   },
 	components: {
+		Navbar,
 		FormMail
 	}
 }

@@ -9,9 +9,9 @@
 					<p>ES UNA EXCELENTE SOLUCIÓN PARA CONSEGUIR LIQUIDEZ INMEDIATA SIN ENDEUDARSE Y PODRÁS SOLICITAR HASTA 1 MES DE TU SUELDO POR ADELANTADO. SIN TRÁMITES COMPLICADOS NI COMISIONES. PUEDES SOLICITAR UN ANTICIPO CUANTAS VECES LO NECESITES SIEMPRE Y CUANDO HAYAS CUBIERTO TU SALDO ANTERIOR.</p>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 image no-padding">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
 				<div class="image">
-					<img src="../../assets/adelanto7.jpg">
+					<img src="../../assets/adelanto.jpg">
 				</div>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'AdelantoImagen'
+	name: 'AdelantoImagen'
 }
 </script>
 
@@ -37,9 +37,9 @@ export default {
 		/* width: 840px;
 		height: 720px; */
 		max-width: 100%;
-		max-height: 100vh;
+		/* height: 100%; */
 		margin: auto;
-		margin-bottom: 0;
+		/* margin-bottom: 0; */
 	}
 	.no-padding {
 		padding: 0;
