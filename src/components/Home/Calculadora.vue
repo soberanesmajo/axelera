@@ -9,25 +9,23 @@
 
           <div class="card monto-credit">
             <h5>Monto de tu crédito</h5>
-            <p>3,000 - 150,000</p>
-            <input id="monto-range" type="range" min="3000" max="150000" step="1000" name="Monto del credito" value="3000" v-model.number="montoRange">
-            <div class="input-group mb-3">
-              <input id="monto" class="form-control" type="number" min="3000" max="150000" step="1000" name="Monto del credito" placeholder="Monto del credito" value="3000">
-            </div>
+            <p>$ 3,000 - $ 150,000</p>
+            <b-form-input id="monto-range" v-model="valueMonto" type="range" min="3000" max="150000" step="1000"></b-form-input>
+            <span class="span-value">$ {{valueMonto}}</span>
           </div>
 
           <div class="card plazo-credit">
             <h5>Plazo de tu crédito</h5>
             <p>3 meses - 24 meses</p>
-            <input id="plazo-range" type="range" min="3" max="24" step="1" name="" value="3" v-model.number="plazoRange">
-            <div class="input-group mb-3">
-            <input class="form-control" id="plazo" type="number" min="3" max="24" name="Plazo del credito" placeholder="Plazo del credito" value="3">
-            </div>
+            <b-form-input id="plazo-range" v-model="valuePlazo" type="range" min="3" max="24" step="1"></b-form-input>
+            <span class="span-value">{{valuePlazo}} meses</span>
           </div>
 
-          <div class="pagos">
+          <div class="card card-pagos">
             <h5>Tus pagos mensuales aproximados</h5>
-            <span id="pagos">$</span>
+            <div class="span-value span-pagos">
+              <span class="pagos">$ {{pagos}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -36,24 +34,48 @@
 </template>
 
 <script>
+
 export default {
-	name: 'Calculadora',
+  name: 'Calculadora',
+  data() {
+    return {
+      valueMonto: '3000',
+      valuePlazo: '3',
+    }
+  },
+  computed: {
+    pagos: function calculoPagos () {
+      const tasaAnual = .39;
+      const tasaMensual = tasaAnual/12;
+      let monto = this.valueMonto;
+      let plazo = this.valuePlazo;
+      let tasaPlazo = Math.pow(1+tasaMensual, plazo);
+      let calculo = Number((tasaMensual*tasaPlazo*(monto/(tasaPlazo-1))).toFixed(2));    
+      let pagos = calculo.toLocaleString();
+      return pagos;
+    }
+  }
 }
 </script>
 
 <style scoped>
   .card {
-    padding: 2%;
+    padding: 6% 2%;
     border: 0;
+  }
+  .card-pagos {
+    border-color: black;
   }
   .first {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .form-control {
-  text-align: center;
-  border: 0;
+  .span-value {
+  text-align: center !important;
   font-weight: bolder;
+  }
+  .span-pagos {
+    margin-top: 3%;
   }
   .second {
     padding-right: 43px;
@@ -84,34 +106,29 @@ export default {
     font-weight: bold;
   }
   input[type=range]{
-  -webkit-appearance: none;
-  appearance: none;
-  height: 8px;
-  background-color: #745B6F;
-  margin-bottom: 5%;
-  outline: none;
-  -webkit-transition: .2s;
-  border-radius: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background-color: #745B6F !important;
+    margin-bottom: 5%;
+    outline: none;
+    -webkit-transition: .2s;
+    border-radius: 15px;
   }
   input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #988095;
-  cursor: pointer;
-  border-radius: 15px;
-  }
-  input[type=number]:focus{
-  box-shadow: 1px 1px 10px #A2869A;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #988095;
+    cursor: pointer;
+    border-radius: 15px;
   }
   p {
     text-align: center;
   }
   .pagos {
-    border-color: #745B6F !important; 
-    border-width: medium;
-    padding: 2%;
+    font-size: 1.5rem;
   }
 </style>
 
