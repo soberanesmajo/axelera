@@ -112,6 +112,12 @@ export default {
 			border: 0;
 		}
 	}
+	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
+		.section{
+			height: auto;
+			margin-bottom: 15%;
+		}
+	}
 </style>
 
 

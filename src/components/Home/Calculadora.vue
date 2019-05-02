@@ -112,7 +112,6 @@ export default {
     background-color: #745B6F !important;
     margin-bottom: 5%;
     outline: none;
-    -webkit-transition: .2s;
     border-radius: 15px;
   }
   input[type=range]::-webkit-slider-thumb{
@@ -129,6 +128,60 @@ export default {
   }
   .pagos {
     font-size: 1.5rem;
+  }
+  @media only screen and (max-device-width:320px) {
+    .background {
+      background-color: rgb(156, 133, 150, .72);	
+      height: auto;
+      width: 300px;
+      margin-top: 30%;
+      border-radius: 5px;
+      padding-bottom: 15px;
+    }
+    .background-white {
+      background-color: white;
+      height: auto;
+    }
+    .second {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+  @media only screen and (min-device-width:360px) and (max-device-width:375px) {
+    .background {
+      background-color: rgb(156, 133, 150, .72);	
+      height: auto;
+      width: 340px;
+      margin-top: 20%;
+      border-radius: 5px;
+      padding-bottom: 20px;
+    }
+    .background-white {
+      background-color: white;
+      height: auto;
+    }
+    .second {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+  @media only screen and (min-device-width:411px) and (max-device-width:420px) {
+    .background {
+      background-color: rgb(156, 133, 150, .72);	
+      height: auto;
+      width: 390px;
+      margin-top: 20%;
+      border-radius: 5px;
+      padding-bottom: 20px;
+    }
+    .background-white {
+      background-color: white;
+      height: auto;
+    }
+    .second {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 </style>
 

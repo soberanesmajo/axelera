@@ -122,6 +122,20 @@ export default {
 	section a {
 		text-decoration: none;
 	}
+	@media only screen and (min-device-width:320px) and (max-device-width:490px){
+		section {
+			margin-bottom: 10%;
+			padding-top: 4rem;
+		}
+		h4 {
+			margin-bottom: 10%;
+		}
+	}
+	@media only screen and (device-width:768px) {
+		section {
+			padding-top: 2rem;
+		}
+	}
 </style>
 
 

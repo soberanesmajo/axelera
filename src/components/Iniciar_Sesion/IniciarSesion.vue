@@ -14,7 +14,7 @@ export default {
 	data(){
     return{
       myStyle:{
-        backgroundColor: "rgb(156, 133, 150, .72)"	 
+        backgroundColor: "rgb(156, 133, 150, .72)"
       }
     }
   },
@@ -33,6 +33,24 @@ export default {
 		height: auto;
 		margin-top: 5%;
 	}
+	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
+		.form {
+			display:flex;
+			justify-content: center;
+			padding-top: 2%;
+			height: 100vh;
+			margin-top: 5%;
+		}
+	}
+	/* @media only screen and (min-device-width:768px) {
+		.form {
+			display:flex;
+			justify-content: center;
+			padding-top: 2%;
+			height: 100vh;
+			margin-top: 5%;
+		}
+	} */
 </style>
 
 

@@ -24,6 +24,12 @@ export default {
   .seccion {
 		height: 60vh;
   }
+  @media only screen and (min-device-width:320px) and (max-device-width:490px) {
+    .seccion {
+      height: auto;
+      margin-bottom: 20%;
+    }
+  }
   @media only screen and (device-width:768px) {
     .seccion {
       height: 35vh;
