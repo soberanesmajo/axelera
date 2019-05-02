@@ -95,6 +95,28 @@ export default {
 		background-color: black;
 		border: none;
 	}
+	@media only screen and (min-device-width:320px) and (max-device-width:375px) {
+		.form {
+			background-color: white;
+			width: 300px;
+			height:auto;
+			border-radius: 15px;
+			margin-top: 7rem 0 0 !important;
+			/* margin-bottom: 10%; */
+			padding-bottom: 10%;
+		}
+	}
+	@media only screen and (min-device-width:411px) and (max-device-width:480px){
+		.form {
+			background-color: white;
+			width: 390px;
+			height:auto;
+			border-radius: 15px;
+			margin-top: 7rem 0 0 !important;
+			/* margin-bottom: 10%; */
+			padding-bottom: 10%;
+		}
+	}
 </style>
 
 

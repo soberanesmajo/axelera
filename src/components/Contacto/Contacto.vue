@@ -6,7 +6,7 @@
 			<hr>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 						<div class="container">
 							<div class="row">
 								<p>Prolongación Paseo de la Reforma 1015, Piso 9, Edificio B, Punta Santa Fe, Col. Desarrollo Santa Fe, CP 01376, Mexico DF.</p>
@@ -16,30 +16,30 @@
 							<div class="row">
 								<p>NOMBRE<span>*</span></p>
 							</div>
-							<div class="row">
-								<input class="col-4 space" type="text" placeholder="First">
-								<input class="col-4 space" type="text" placeholder="Last">
+							<div class="row row-space">
+								<input class="col-5" type="text" placeholder="First">
+								<input class="col-5" type="text" placeholder="Last">
 							</div>
 							<br>
 							<div class="row">
 								<p>EMAIL<span>*</span></p>
 							</div>
 							<div class="row">
-								<input type="text">
+								<input type="text" class="col-12">
 							</div>
 							<br>
 							<div class="row">
 								<p>MENSAJE<span>*</span></p>
 							</div>
 							<div class="row">
-								<textarea name="" id="" cols="40" rows="5"></textarea>
+								<textarea cols="120" rows="5"></textarea>
 							</div>
 							<div class="row">
 								<button>Enviar</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 div-map">
 						<img src="../../assets/mapa.png" alt="mapa">
 					</div>
 				</div>
@@ -73,13 +73,13 @@ export default {
 	.header {
 		text-align: left;
 		color: #745B6F;
-		margin-top: 15%;
+		margin-top: 10%;
 	}
-	.space {
-		margin-right: 5px;
+	.row-space {
+		justify-content: space-between;
 	}
 	section {
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 	}
 	span {
 		color: red;
@@ -87,6 +87,35 @@ export default {
 	img {
 		width: 33rem;
 		height: 30rem;
+	}
+	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
+		section {
+			margin-bottom: 10%;
+			padding-top: 3rem;
+		}
+		.div-map {
+			width: 100%;
+			margin-top: 10%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	@media only screen and (device-width:768px) {
+		.div-map {
+			margin-top: 5%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.row-space {
+			justify-content: space-between;
+		}
+		textarea {
+			width: 100%;
+		}
 	}
 </style>
 

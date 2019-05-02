@@ -1,7 +1,7 @@
 <template>
 	<div class="section">
 		<header>
-			<h4 class="header">¿QUÉ NECESITO PARA SOLICITAD MI CRÉDITO?</h4>
+			<h4 class="header">¿QUÉ NECESITO PARA SOLICITAR MI CRÉDITO?</h4>
 		</header>
 		<section class="container">
 			<div class="row">
@@ -77,6 +77,12 @@ export default {
 	}
 	.section {
 		height: 75vh;
+	}
+	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
+		.section {
+			height: auto;
+			margin-bottom: 15%;
+		}
 	}
 	@media only screen and (device-width:768px) {
 		.section {

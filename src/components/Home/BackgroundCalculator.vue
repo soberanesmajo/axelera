@@ -33,6 +33,16 @@ export default {
 	.row {
 		margin-top: 2%;
 	}
+	@media only screen and (max-device-width:320px) {
+		.background-image {
+			background-image: url("../../assets/background-calculator.jpg");
+			width: 100vw;
+			height: auto;
+			background-size: cover;
+			background-position: bottom;
+			padding-bottom: 15px !important;
+		}
+	}
 	@media only screen and (max-device-width:1024px) {
 		.container-fluid {
 			display: flex;

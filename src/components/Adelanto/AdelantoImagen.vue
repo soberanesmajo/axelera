@@ -64,6 +64,11 @@ export default {
 		font-size: 14px;
 		text-align: justify; 
 	}
+	@media only screen and (device-width:768px) {
+		.row {
+			margin-top: 5%;
+		}
+	}
 </style>
 
 
