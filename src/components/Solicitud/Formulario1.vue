@@ -3,51 +3,55 @@
 		<Navbar/>
 		<SolicitudImagen/>	
 		<section class="container form1">
-			<div class="container cont-color" :style="myStyle">
-				<form class="form">
-					<p class="p">Por favor, ten a la mano tu identificación y comprobante de domicilio escaneados, los vamos a necesitar mas adelante. <span>*</span></p>
-					<label>Paso 1 de 5</label>
-					<div class="row">
-						<b-form-input id="range-2" class="input" v-model="value" type="range" min="0" max="5" step="1"></b-form-input>
+			<div class="row">
+				<div class="principal">
+					<div class="container cont-color" :style="myStyle">
+						<form class="form">
+							<p class="p">Por favor, ten a la mano tu identificación y comprobante de domicilio escaneados, los vamos a necesitar mas adelante. <span>*</span></p>
+							<label>Paso 1 de 5</label>
+							<div class="row">
+								<b-form-input id="range-2" class="input" v-model="value" type="range" min="0" max="5" step="1"></b-form-input>
+							</div>
+							<h4>Déjanos ayudarte. Por favor ingresa tus datos para estar en contacto.</h4>
+							<p>Nombre<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Apellido Paterno<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Apellido Materno<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Email<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Celular<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p class="p">Por este conducto autorizo expresamente a CREDITEA, SAPI DE C.V. SOFOM, E.N.R., para que por conducto de sus funcionarios facultados lleve a cabo Investigaciones, sobre mi comportamiento crediticio o el de la Empresa que represento en Trans Unión de México, S. A. SIC y/o Dun & Bradstreet, S.A. SIC En caso de que la solicitante sea una Persona Moral, declaro bajo protesta de decir verdad Ser Representante Legal de la empresa mencionada en esta autorización; manifestando que a la fecha de envio de la presente autorización los poderes no me han sido revocados, limitados, ni modificados en forma alguna.<span>*</span></p>
+							<br>
+							<select>
+								<option value="sí">Sí</option>
+								<option value="no">No</option>
+							</select>
+							<br>
+							<div class="row button">
+								<button type="submit"><router-link to="/solicita-tu-credito-2">Avanzar</router-link></button>
+							</div>
+							<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
+						</form>
 					</div>
-					<h4>Déjanos ayudarte. Por favor ingresa tus datos para estar en contacto.</h4>
-					<p>Nombre<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Apellido Paterno<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Apellido Materno<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Email<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Celular<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p class="p">Por este conducto autorizo expresamente a CREDITEA, SAPI DE C.V. SOFOM, E.N.R., para que por conducto de sus funcionarios facultados lleve a cabo Investigaciones, sobre mi comportamiento crediticio o el de la Empresa que represento en Trans Unión de México, S. A. SIC y/o Dun & Bradstreet, S.A. SIC En caso de que la solicitante sea una Persona Moral, declaro bajo protesta de decir verdad Ser Representante Legal de la empresa mencionada en esta autorización; manifestando que a la fecha de envio de la presente autorización los poderes no me han sido revocados, limitados, ni modificados en forma alguna.<span>*</span></p>
-					<br>
-					<select>
-						<option value="sí">Sí</option>
-						<option value="no">No</option>
-					</select>
-					<br>
-					<div class="row button">
-						<button type="submit"><router-link to="/solicita-tu-credito-2">Avanzar</router-link></button>
-					</div>
-					<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
-				</form>
+				</div>
 			</div>
 		</section>
 		<Footer/>
@@ -63,7 +67,7 @@ export default {
 	name: 'Formulario1',
 	data(){
     return{
-      myStyle:{
+			myStyle:{
         backgroundColor: "rgb(156, 133, 150, .72)"	 
 			},
 			value: '1'
@@ -141,6 +145,10 @@ export default {
     text-decoration: none;
     background-color: transparent !important;
   }
+	.principal {
+		width: 100%;
+		display: flex;
+	}
 </style>
 
 

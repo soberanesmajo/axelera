@@ -1,55 +1,48 @@
-<template>
-	<div class="form" :style="myStyle">
+
+	<!-- <div class="height" :style="myStyle">
 		<Navbar/>
-		<FormLogin/>
-	</div>
-</template>
+		<div class="form container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-login">
+					<FormLogin/>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
 
 <script>
-import Navbar from '../Navbar/Navbar.vue';
-import FormLogin from './FormLogin.vue'
+// import Navbar from '../Navbar/Navbar.vue';
+// import FormLogin from './FormLogin.vue'
 
-export default {
-	name: 'IniciarSesion',
-	data(){
-    return{
-      myStyle:{
-        backgroundColor: "rgb(156, 133, 150, .72)"
-      }
-    }
-  },
-	components: {
-		Navbar,
-		FormLogin
-	}
-}
+// export default {
+// 	name: 'IniciarSesion',
+// 	data(){
+//     return{
+//       myStyle:{
+//         backgroundColor: "rgb(156, 133, 150, .72)"
+//       }
+//     }
+//   },
+// 	components: {
+// 		Navbar,
+// 		FormLogin
+// 	}
+// }
 </script>
 
 <style scoped>
+	/* .height {
+		height: 100vh;
+	}
 	.form {
 		display:flex;
 		justify-content: center;
 		padding-top: 2%;
-		height: auto;
 		margin-top: 5%;
 	}
-	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
-		.form {
-			display:flex;
-			justify-content: center;
-			padding-top: 2%;
-			height: 100vh;
-			margin-top: 5%;
-		}
-	}
-	/* @media only screen and (min-device-width:768px) {
-		.form {
-			display:flex;
-			justify-content: center;
-			padding-top: 2%;
-			height: 100vh;
-			margin-top: 5%;
-		}
+	.form-login {
+		padding: 0;
 	} */
 </style>
 
