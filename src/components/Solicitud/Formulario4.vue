@@ -2,92 +2,96 @@
 	<div>		
 		<Navbar/>
 		<section class="container form4">
-			<div class="container cont-color" :style="myStyle">
-				<form class="form">
-					<p class="p">Por favor, ten a la mano tu identificación y comprobante de domicilio escaneados, los vamos a necesitar mas adelante. <span>*</span></p>
-					<label>Paso 4 de 5</label>
-					<div class="row">
-						<b-form-input id="range-2" class="input" v-model="value" type="range" min="0" max="5" step="1"></b-form-input>
+			<div class="row">
+				<div class="principal">
+					<div class="container cont-color" :style="myStyle">
+						<form class="form">
+							<p class="p">Por favor, ten a la mano tu identificación y comprobante de domicilio escaneados, los vamos a necesitar mas adelante. <span>*</span></p>
+							<label>Paso 4 de 5</label>
+							<div class="row">
+								<b-form-input id="range-2" class="input" v-model="value" type="range" min="0" max="5" step="1"></b-form-input>
+							</div>
+							<h4>Datos Laborales</h4>
+							<p>Nombre de la empresa donde trabaja<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Antigüedad laboral<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Frecuencia de pago<span>*</span></p>
+							<div class="row">
+								<select>
+									<option value="Semanal" >Semanal</option><option value="Catorcenal" >Catorcenal</option><option value="Quincenal" >Quincenal</option><option value="Mensual" >Mensual</option>
+								</select>
+							</div>
+							<br>
+							<p>Puesto<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Correo electrónico del trabajo<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Jefe Inmediato<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Saldo Mensual<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Monto solicitado<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Plazo requerido<span>*</span></p>
+							<div class="row">
+								<select>
+									<option value="6 Meses" >6 Meses</option><option value="12 Meses" >12 Meses</option><option value="18 Meses" >18 Meses</option><option value="24 Meses" >24 Meses</option>
+								</select>
+							</div>
+							<br>
+							<p>Destino de crédito<span>*</span></p>
+							<div class="row">
+								<select>
+									<option value="Negocio" >Negocio</option><option value="Deuda" >Deuda</option><option value="Oportunidad" >Oportunidad</option><option value="Emergencia" >Emergencia</option><option value="Vacaciones" >Vacaciones</option><option value="Otro." >Otro.</option>
+								</select>
+							</div>
+							<br>
+							<p>Cuenta bancaria<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+								<label>(Cuenta donde recibes tu nómina)</label>
+							</div>
+							<br>
+							<p>Banco<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+							</div>
+							<br>
+							<p>Clabe<span>*</span></p>
+							<div class="row">
+								<input class="input" type="text" required>
+								<label>(18 dígitos)</label>
+							</div>
+							<div class="row button">
+								<button><router-link class="dropdown-item" to="/solicita-tu-credito-3">Regresar</router-link></button>
+								<button><router-link class="dropdown-item" to="/solicita-tu-credito-5">Avanzar</router-link></button>
+							</div>
+							<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
+						</form>
 					</div>
-					<h4>Datos Laborales</h4>
-					<p>Nombre de la empresa donde trabaja<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Antigüedad laboral<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Frecuencia de pago<span>*</span></p>
-					<div class="row">
-						<select>
-							<option value="Semanal" >Semanal</option><option value="Catorcenal" >Catorcenal</option><option value="Quincenal" >Quincenal</option><option value="Mensual" >Mensual</option>
-						</select>
-					</div>
-					<br>
-					<p>Puesto<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Correo electrónico del trabajo<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Jefe Inmediato<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Saldo Mensual<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Monto solicitado<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Plazo requerido<span>*</span></p>
-					<div class="row">
-						<select>
-							<option value="6 Meses" >6 Meses</option><option value="12 Meses" >12 Meses</option><option value="18 Meses" >18 Meses</option><option value="24 Meses" >24 Meses</option>
-						</select>
-					</div>
-					<br>
-					<p>Destino de crédito<span>*</span></p>
-					<div class="row">
-						<select>
-							<option value="Negocio" >Negocio</option><option value="Deuda" >Deuda</option><option value="Oportunidad" >Oportunidad</option><option value="Emergencia" >Emergencia</option><option value="Vacaciones" >Vacaciones</option><option value="Otro." >Otro.</option>
-						</select>
-					</div>
-					<br>
-					<p>Cuenta bancaria<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-						<label>(Cuenta donde recibes tu nómina)</label>
-					</div>
-					<br>
-					<p>Banco<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-					</div>
-					<br>
-					<p>Clabe<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text" required>
-						<label>(18 dígitos)</label>
-					</div>
-					<div class="row button">
-						<button><router-link class="dropdown-item" to="/solicita-tu-credito-3">Regresar</router-link></button>
-						<button><router-link class="dropdown-item" to="/solicita-tu-credito-5">Avanzar</router-link></button>
-					</div>
-					<p class="p">Toda la información antes proporcionada es confidencial, usada solamente para el proceso de solicitud de financiamiento de CREDITEA, SAPI. de C.V. SOFOM ENR y no será compartida con terceros. Para dar continuidad a tu solicitud, puedes hacerlo en: hola@axelera.credit</p>
-				</form>
+				</div>
 			</div>
 		</section>
 		<Footer/>
@@ -177,6 +181,11 @@ export default {
     text-decoration: none;
     background-color: transparent !important;
   }
+	.principal {
+		width: 100%;
+		display: flex;
+		margin-top: 10%;
+	}
 </style>
 
 
