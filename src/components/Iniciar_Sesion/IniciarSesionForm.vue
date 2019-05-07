@@ -7,31 +7,28 @@
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<div class="form">
 							<div class="container cont">
-								<h5 class="header">¡ Regístrate !</h5>
-								<p>Nombre de usuario<span>*</span></p>
-									<div class="row">
-										<input class="input" type="text" placeholder="">
-									</div>
-									<br>
-									<p>Correo<span>*</span></p>
-									<div class="row">
-										<input class="input" type="text" placeholder="">
-									</div>
-									<br>
-									<p>Contraseña<span>*</span></p>
-										<div class="row">
-											<input class="input" type="text" placeholder="">
-										</div>
-									<br>
-									<p>Confirmar contraseña<span>*</span></p>
-										<div class="row">
-											<input class="input" type="text" placeholder="">
-										</div>
-									<div class="row button">
-										<button><router-link to="/iniciar-sesion">Registrarse</router-link></button>
-									</div>
-									<hr>
-									<p class="center">¿Ya tienes cuenta? <span><router-link to="/iniciar-sesion">Inicia Sesión</router-link></span></p>
+								<h5 class="header">INICIAR SESIÓN</h5>
+								<p>Correo<span>*</span></p>
+								<div class="row">
+									<input class="input" type="text" placeholder="">
+								</div>
+								<br>
+								<p>Contraseña<span>*</span></p>
+								<div class="row">
+									<input class="input" type="text" placeholder="">
+								</div>
+								<br>
+								<div class="row button">
+									<button>INICIAR SESIÓN</button>
+								</div>
+								<div class="a">
+									<router-link to="/mail">¿Olvidaste tu contraseña?</router-link>
+								</div>
+								<hr>
+								<p class="center">¿Aún no estás registrado?</p>
+								<div class="row button">
+									<button><router-link to="/registro">¡Regístrate Aquí!</router-link></button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -44,7 +41,7 @@
 <script>
 import Navbar from '../Navbar/Navbar.vue';
 export default {
-	name: 'FormRegistro',
+	name: 'IniciarSesionForm',
 	components: {
 		Navbar
 	}
@@ -94,8 +91,7 @@ export default {
 	}
 	button {
 		text-align: center;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 20px;
 		padding: 4px 25px;
 		border: 0;
 		border-radius: 5px;
@@ -103,6 +99,10 @@ export default {
 	}
 	.button {
 		justify-content: center;
+	}
+	.a {
+		margin-top: 15%;
+		margin-bottom: 20%;
 	}
 	button a {
 		color: black !important;

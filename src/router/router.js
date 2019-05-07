@@ -5,8 +5,7 @@ import Personal from '../components/Personal/Personal.vue';
 import Adelanto from '../components/Adelanto/Adelanto.vue';
 import Preguntas from '../components/Preguntas/Preguntas.vue';
 import Contacto from '../components/Contacto/Contacto.vue';
-//import IniciarSesion from '../components/Iniciar_Sesion/IniciarSesion.vue';
-import FormLogin from '../components/Iniciar_Sesion/FormLogin.vue';
+import Iniciar from '../components/Iniciar_Sesion/Iniciar.vue';
 import Registro from '../components/Registro/Registro.vue';
 import Mail from '../components/Contrasena/Mail.vue';
 import Restablecer from '../components/Contrasena/Restablecer.vue';
@@ -45,15 +44,10 @@ export default new Router({
       name: 'contacto',
       component: Contacto
     },
-    // {
-    //   path: '/iniciar-sesion', 
-    //   name: 'iniciar sesión',
-    //   component: IniciarSesion
-    // },
     {
-      path: '/form-login', 
-      name: 'FormLogin',
-      component: FormLogin
+      path: '/iniciar-sesion', 
+      name: 'iniciar sesion',
+      component: Iniciar
     },
     {
       path: '/registro', 
