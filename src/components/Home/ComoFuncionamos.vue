@@ -118,6 +118,12 @@ export default {
 			margin-bottom: 15%;
 		}
 	}
+	@media only screen and (min-device-width:491px) and (max-device-width:991px) {
+		.section{
+			height: auto;
+			margin-bottom: 10%;
+		}
+	}
 </style>
 
 
