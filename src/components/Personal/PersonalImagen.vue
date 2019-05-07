@@ -11,7 +11,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
 				<div class="image">
-					<img src="../../assets/personal3.jpg">
+					<img src="../../assets/personal.jpg">
 				</div>
 			</div>
 		</div>
