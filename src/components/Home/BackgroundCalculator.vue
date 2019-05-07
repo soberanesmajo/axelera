@@ -24,7 +24,7 @@ export default {
 		padding-right: 5rem;
 	}
 	.background-image {
-		background-image: url("../../assets/background-calculator.jpg");
+		background-image: url("../../assets/background-calculator3.jpg");
 		width: 100vw;
 		height: 100vh;
 		background-size: cover;
