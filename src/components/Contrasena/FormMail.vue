@@ -4,12 +4,12 @@
 			<div class="container cont">
 				<h5 class="header">¿Olvidaste tu contraseña?</h5>
 				<p>Por favor, introduce tu correcto electrónico para enviarte instrucciones para restablecer tu contraseña.<span>*</span></p>
-					<div class="row">
-						<input class="input" type="text">
-					</div>
-					<div class="row button">
-						<button>Enviar</button>
-					</div>					
+				<div class="row">
+					<input class="input" type="text">
+				</div>
+				<div class="row button">
+					<button>Enviar</button>
+				</div>					
 			</div>
 		</div>
 	</form>
@@ -24,8 +24,8 @@ export default {
 <style scoped>
 	.cont {
 		padding-top: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
+		padding-left: 45px;
+		padding-right: 45px;
 	}
 	p {
 		text-align: justify;

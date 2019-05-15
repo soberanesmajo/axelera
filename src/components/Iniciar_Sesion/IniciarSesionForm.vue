@@ -26,7 +26,7 @@
 
 <script>
 export default {
-	name: 'IniciarSesionForm',
+	name: 'IniciarSesionForm'
 }
 </script>
 
