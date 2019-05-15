@@ -6,9 +6,10 @@ import Adelanto from '../components/Adelanto/Adelanto.vue';
 import Preguntas from '../components/Preguntas/Preguntas.vue';
 import Contacto from '../components/Contacto/Contacto.vue';
 import Iniciar from '../components/Iniciar_Sesion/Iniciar.vue';
-import Registro from '../components/Registro/Registro.vue';
 import Mail from '../components/Contrasena/Mail.vue';
 import Restablecer from '../components/Contrasena/Restablecer.vue';
+import Registro from '../components/Registro/Registro.vue';
+import Verificacion from '../components/Registro/Verificacion.vue';
 import Formulario1 from '../components/Solicitud/Formulario1.vue';
 import Formulario2 from '../components/Solicitud/Formulario2.vue';
 import Formulario3 from '../components/Solicitud/Formulario3.vue';
@@ -50,11 +51,6 @@ export default new Router({
       component: Iniciar
     },
     {
-      path: '/registro', 
-      name: 'registro',
-      component: Registro
-    },
-    {
       path: '/mail', 
       name: 'mail',
       component: Mail
@@ -63,6 +59,16 @@ export default new Router({
       path: '/restablecer', 
       name: 'restablecer',
       component: Restablecer
+    },
+    {
+      path: '/registro', 
+      name: 'registro',
+      component: Registro
+    },
+    {
+      path: '/verificacion', 
+      name: 'verificacion',
+      component: Verificacion
     },
     {
       path: '/solicita-tu-credito', 

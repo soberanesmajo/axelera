@@ -30,7 +30,7 @@
 							</div>
 							<input type="checkbox">  <label class="terminos">Acepto los términos y condiciones y las políticas de privacidad.</label>								
 							<div class="row button">
-								<button><router-link to="/solicita-tu-credito">Registrarse</router-link></button>
+								<button><router-link to="/verificacion">Registrarse</router-link></button>
 							</div>
 					</div>
 				</div>
