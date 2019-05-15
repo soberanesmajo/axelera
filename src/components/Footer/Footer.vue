@@ -50,7 +50,7 @@ export default {
     position: relative;
   }
   .first {
-    margin-bottom: 2%;
+    padding-bottom: 2rem;
   }
   .icons {
     width: 25px;

@@ -117,7 +117,7 @@ export default {
 		border-radius: 15px;
   }
 	a {
-		color: black !important;
+	color: black !important;
     text-decoration: none;
     background-color: transparent !important;
   }

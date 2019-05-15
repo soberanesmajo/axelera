@@ -51,10 +51,11 @@ export default {
 <style scoped>
 	.header {
 		text-align: center;
-		color: #745B6F;
+		color:snow;
 		margin-top: 5%;
 	}
 	.card {
+		padding-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		border: 0;
@@ -76,7 +77,10 @@ export default {
 		margin-top: 5%;
 	}
 	.section {
-		height: 75vh;
+		margin-top: 1rem;
+		height: 70vh;
+		background-color: #A2859A;
+		padding-top: 6px;
 	}
 	@media only screen and (min-device-width:320px) and (max-device-width:490px) {
 		.section {

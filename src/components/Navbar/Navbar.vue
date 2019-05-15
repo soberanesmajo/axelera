@@ -26,7 +26,7 @@
           <router-link class="dropdown-item color-text" to="/iniciar-sesion">INICIA SESIÓN</router-link>
         </li>
         <li>
-          <button type="button" class="btn"><router-link class="dropdown-item btn" to="/solicita-tu-credito">SOLICITA TU CRÉDITO</router-link></button>
+          <button type="button" class="btn"><router-link class="dropdown-item btn" to="/registro">SOLICITA TU CRÉDITO</router-link></button>
         </li>
       </ul>
     </div>

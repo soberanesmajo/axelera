@@ -16,7 +16,7 @@ import Banner from '../Banner/Banner.vue';
 import Footer from '../Footer/Footer.vue';
 
 export default {
-  name: 'Personal',
+	name: 'Personal',
 	components: {
 		Navbar,
 		PersonalImagen,

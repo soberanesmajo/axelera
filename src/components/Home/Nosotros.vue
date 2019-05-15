@@ -1,8 +1,11 @@
 <template>
   <div class="seccion">
     <section class="container">
-      <p class="text">AXELERA ES UNA EMPRESA MEXICANA ENFOCADA EN OFRECER SOLUCIONES FINANCIERAS A LOS TRABAJADORES DE CUALQUIER EMPRESA DE FORMA ÁGIL, SENCILLA Y PERSONALZADA.</p>
-      <p class="text">ENTENDEMOS QUE PEDIR UN CRÉDITO SUELE SER UN PROCESO LARGO Y COMPLICADO, POR ESO NUESTRO COMPROMISO ES OFRECERTE UNA EXPERIENCIA AMIGABLE Y DARTE RESPUESTA EN MENOS DE 24 HORAS.</p>
+      <div class="image">
+        <img src="../../assets/axelera_logo.png" alt="logo de axelera">
+      </div>
+      <p class="text">Axelera es una empresa mexicana enfocada en ofrecer soluciones financieras a los trabajadores de cualquier empresa de forma ágil, sencilla y personalzada.</p>
+      <p class="text">Entendemos que pedir un crédito suele ser un proceso largo y complicado, por eso nuestro compromiso es ofrecerte una experiencia amigable y darte respuesta en menos de 24 horas.</p>
     </section>
   </div>
 </template>
@@ -14,6 +17,9 @@ export default {
 </script>
 
 <style scoped>
+  .container {
+    padding: 2rem 15rem;
+  }
   .text {
     color: #745B6F;
     text-align: center;
@@ -22,7 +28,19 @@ export default {
     font-weight: bold;
   }
   .seccion {
-		height: 60vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.7rem;
+  }
+  img {
+    width: 130px;
   }
   @media only screen and (min-device-width:320px) and (max-device-width:490px) {
     .seccion {
