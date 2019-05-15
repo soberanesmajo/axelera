@@ -1,5 +1,5 @@
 <template>
-	<div class="form" :style="myStyle">
+	<div class="form">
 		<Navbar/>
 		<FormContrasena/>
 	</div>
@@ -11,13 +11,6 @@ import FormContrasena from './FormContrasena.vue';
 
 export default {
 	name: 'Restablecer',
-	data(){
-    return{
-			myStyle:{
-        backgroundColor: "rgb(156, 133, 150, .72)"	 
-			}
-    }
-	},
 	components: {
 		Navbar,
 		FormContrasena
@@ -30,8 +23,6 @@ export default {
 		display:flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 2%;
-		height: 100vh;
 	}
 </style>
 

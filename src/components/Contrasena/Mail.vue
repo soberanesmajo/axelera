@@ -1,5 +1,5 @@
 <template>
-	<div class="form" :style="myStyle">
+	<div class="form">
 		<Navbar/>
 		<FormMail/>
 	</div>
@@ -11,13 +11,6 @@ import FormMail from './FormMail.vue';
 
 export default {
 	name: 'Mail',
-	data(){
-    return{
-			myStyle:{
-        backgroundColor: "rgb(156, 133, 150, .72)"	 
-      }
-    }
-  },
 	components: {
 		Navbar,
 		FormMail
@@ -30,8 +23,8 @@ export default {
 		display:flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 2%;
-		height: 100vh;
+		/* padding-top: 2%;
+		height: 100vh; */
 	}
 </style>
 
