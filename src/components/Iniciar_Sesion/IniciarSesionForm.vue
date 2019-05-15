@@ -1,62 +1,38 @@
 <template>
-	<div>
-		<Navbar/>
-		<form class="container-fluid height">
-			<div class="form-body container-fluid">
+	<form>
+		<div class="form">
+			<div class="container cont">
+				<h5 class="header">INICIAR SESIÓN</h5>
+				<p>Correo<span>*</span></p>
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-						<div class="form">
-							<div class="container cont">
-								<h5 class="header">INICIAR SESIÓN</h5>
-								<p>Correo<span>*</span></p>
-								<div class="row">
-									<input class="input" type="text" placeholder="">
-								</div>
-								<br>
-								<p>Contraseña<span>*</span></p>
-								<div class="row">
-									<input class="input" type="text" placeholder="">
-								</div>
-								<br>
-								<div class="row button">
-									<button>INICIAR SESIÓN</button>
-								</div>
-								<div class="a">
-									<router-link to="/mail">¿Olvidaste tu contraseña?</router-link>
-								</div>
-								<hr>
-								<p class="center">¿Aún no estás registrado?</p>
-								<div class="row button">
-									<button><router-link to="/registro">¡Regístrate Aquí!</router-link></button>
-								</div>
-							</div>
-						</div>
-					</div>
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<p>Contraseña<span>*</span></p>
+				<div class="row">
+					<input class="input" type="text" placeholder="">
+				</div>
+				<br>
+				<div class="row button">
+					<button>Iniciar Sesión</button>
+				</div>
+				<div class="a">
+					<router-link to="/mail">¿Olvidaste tu contraseña?</router-link>
 				</div>
 			</div>
-		</form>
-	</div>
+		</div>
+	</form>
 </template>
 
 <script>
-import Navbar from '../Navbar/Navbar.vue';
 export default {
 	name: 'IniciarSesionForm',
-	components: {
-		Navbar
-	}
 }
 </script>
 
 <style scoped>
-	.height {
-		height: 100vh !important;
-		margin-top: 0.5rem;
-	}
 	.cont {
-		padding-top: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
+		padding: 15px 45px 10px; 
 		margin-top: 3rem;
 	}
 	.center {
@@ -64,15 +40,13 @@ export default {
 		margin-top: 15%;
 		margin-bottom: 10%;
 	}
-	.form-body {
-		display:flex;
-		justify-content: center;
-	}
 	.form {
 		background-color: white;
 		width: 25rem;
-		height: 90vh;
-		border-radius: 15px;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+		margin-bottom: 3rem;
 	}
 	.header {
 		text-align: center;
@@ -90,12 +64,16 @@ export default {
 		color: red;
 	}
 	button {
+		font-size: 1.5rem;	
+		color: snow !important;
 		text-align: center;
 		margin-top: 20px;
-		padding: 4px 25px;
+		/* padding: 4px 25px; */
+		padding: 12px 50px;
 		border: 0;
 		border-radius: 5px;
-		background-color: rgb(156, 133, 150, .72);
+		background-color: rgb(156, 133, 150);
+		/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
 	}
 	.button {
 		justify-content: center;
@@ -103,9 +81,10 @@ export default {
 	.a {
 		margin-top: 15%;
 		margin-bottom: 20%;
+		text-align: center;
 	}
 	button a {
-		color: black !important;
+		color: snow !important;
 		text-decoration: none;
 		background-color: transparent !important;
 	}
@@ -114,6 +93,42 @@ export default {
 		color: black;
 		background-color: black;
 		border: none;
+	}
+	@media only screen and (min-device-width:320px) and (max-device-width:400px) {
+		.form {
+			background-color: white;
+			width: 18rem;
+			height: auto;
+			border-radius: 15px;
+		}
+		.cont {
+			padding-bottom: 50px;
+			/* margin-top: 7rem; */
+		}
+		.form-body {
+			padding: 0;
+		}
+		.height {
+			padding: 0;
+		}
+	}
+	@media only screen and (min-device-width:401px) and (max-device-width:480px) {
+		.form {
+			background-color: white;
+			width: 21rem;
+			height: auto;
+			border-radius: 15px;
+		}
+		.cont {
+			padding-bottom: 50px;
+			/* margin-top: 7rem; */
+		}
+		.form-body {
+			padding: 0;
+		}
+		.height {
+			padding: 0;
+		}
 	}
 </style>
 

@@ -186,6 +186,11 @@ export default {
 		display: flex;
 		margin-top: 10%;
 	}
+	@media only screen and (min-device-width:320px) and (max-device-width:556px) {
+		.cont-color {
+			margin-top: 5rem;
+		}
+	}
 </style>
 
 

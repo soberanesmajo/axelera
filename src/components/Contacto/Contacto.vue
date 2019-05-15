@@ -17,12 +17,12 @@
 								<p>NOMBRE<span>*</span></p>
 							</div>
 							<div class="row row-space">
-								<input class="col-5" type="text" placeholder="First">
-								<input class="col-5" type="text" placeholder="Last">
+								<input class="col-5" type="text" placeholder="Nombre(s)">
+								<input class="col-5" type="text" placeholder="Apellido(s)">
 							</div>
 							<br>
 							<div class="row">
-								<p>EMAIL<span>*</span></p>
+								<p>CORREO<span>*</span></p>
 							</div>
 							<div class="row">
 								<input type="text" class="col-12">

@@ -62,7 +62,6 @@ export default {
 		margin-bottom: 10%;
 	}
 	.section {
-		/* height: 85vh; */
 		margin-top: 10%;
 		margin-bottom: 15%;
 	}

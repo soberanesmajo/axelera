@@ -69,6 +69,7 @@ export default {
 		margin-left: auto;
 		margin-right: auto;
 		border: 0;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	.horas {
 		font-size: 1.2rem;
@@ -80,6 +81,7 @@ export default {
 		display: flex;
 		justify-content: center;
 		height: 130px;
+		margin-top: 1rem;
 	}
 	.card-title {
 		color: #3C3850;
@@ -87,14 +89,14 @@ export default {
 		margin-top: 1rem;
 		margin-bottom: 1.5rem;
 	}
-	.card-text {
-		text-align: justify;
-	}
 	.row {
 		margin-top: 5%;
 	}
 	.section{
 		height: 85vh;
+	}
+	section {
+		flex-direction: column;
 	}
 	hr {
 		height: 1px;
@@ -110,6 +112,7 @@ export default {
 			margin-left: 3.7rem;
 			margin-right: 3.7rem;
 			border: 0;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 	}
 	@media only screen and (min-device-width:320px) and (max-device-width:490px) {

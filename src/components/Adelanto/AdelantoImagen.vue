@@ -6,7 +6,7 @@
 					<h3 class="h3">AXELERA</h3>
 					<h3>ADELANTO</h3>
 					<hr>
-					<p>ES UNA EXCELENTE SOLUCIÓN PARA CONSEGUIR LIQUIDEZ INMEDIATA SIN ENDEUDARSE Y PODRÁS SOLICITAR HASTA 1 MES DE TU SUELDO POR ADELANTADO. SIN TRÁMITES COMPLICADOS NI COMISIONES. PUEDES SOLICITAR UN ANTICIPO CUANTAS VECES LO NECESITES SIEMPRE Y CUANDO HAYAS CUBIERTO TU SALDO ANTERIOR.</p>
+					<p>Es una excelente solución para conseguir liquidez inmediata sin endeudarse y podrás solicitar hasta 1 mes de tu sueldo por adelantado. Sin trámites complicados ni comisiones. Puedes solicitar un anticipo cuantas veces lo necesites siempre y cuando hayas cubierto tu saldo anterior.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
@@ -61,8 +61,7 @@ export default {
 	}
 	p {
 		color: #3C3850;
-		font-size: 14px;
-		text-align: justify; 
+		font-size: 1rem;
 	}
 	@media only screen and (device-width:768px) {
 		.row {
